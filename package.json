@@ -1,7 +1,12 @@
 {
-  "name": "chainsaw",
-  "version": "0.1.0",
-  "private": true,
+  "name": "pcss-framework",
+  "version": "0.1.1",
+  "description": "Barebones mobile-friendly CSS framework for prototyping. ",
+  "author": "EXLER",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EXLER/pcss.git"
+  },
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp"

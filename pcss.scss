@@ -1,5 +1,5 @@
 /*
- *	chainsaw 0.1.0
+ *	pcss 0.1.1
  *	license: MIT
  *	author: exler
  *	source: https://github.com/exler/chainsaw
@@ -233,7 +233,7 @@ textarea {
 button,
 .button,
 [type=submit] {
-  height: 32px;
+  height: 40px;
   margin-bottom: 16px;
   padding: 10px 10px;
   outline: none;
@@ -336,6 +336,28 @@ code {
   font-family: "Consolas", "Monaco", "Menlo", monospace;
 }
 
+/* ----- Navigation ----- */
+
+.nav {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-family: "Consolas", "Monaco", "Menlo", monospace;
+}
+.nav .nav-item {
+  margin-right: 16px;
+}
+.nav .nav-item:last-child {
+  margin-right: 0;
+}
+.nav .nav-item a {
+  text-decoration: none;
+}
+
 /* ----- Divider ----- */
 
 hr {
@@ -344,6 +366,13 @@ hr {
 }
 
 /* ----- Utility ----- */
+
 .text-center {
   text-align: center;
+}
+.margin-top {
+  margin-top: 5rem;
+}
+.margin-bottom {
+  margin-bottom: 5rem;
 }
