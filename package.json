@@ -1,13 +1,14 @@
 {
   "name": "pcss-framework",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Barebones mobile-friendly CSS framework for prototyping. ",
+  "keywords": ["css", "framework", "css-framework", "scss-framework", "bootstrap"],
   "author": "EXLER",
   "repository": {
     "type": "git",
     "url": "https://github.com/EXLER/pcss.git"
   },
-  "main": "gulpfile.js",
+  "main": "pcss.min.css",
   "scripts": {
     "start": "gulp"
   },
