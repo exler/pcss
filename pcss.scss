@@ -336,28 +336,6 @@ code {
   font-family: "Consolas", "Monaco", "Menlo", monospace;
 }
 
-/* ----- Navigation ----- */
-
-.nav {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  font-family: "Consolas", "Monaco", "Menlo", monospace;
-}
-.nav .nav-item {
-  margin-right: 16px;
-}
-.nav .nav-item:last-child {
-  margin-right: 0;
-}
-.nav .nav-item a {
-  text-decoration: none;
-}
-
 /* ----- Divider ----- */
 
 hr {
