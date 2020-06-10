@@ -1,29 +1,32 @@
-<img src="https://raw.githubusercontent.com/EXLER/pcss/gh-pages/img/pcss-logo.png" width="200">
+<img src="./docs/pcss-logo.png" width="200">
 
-*Barebones mobile-friendly CSS framework for prototyping.*
+Instant mobile-friendly CSS framework for prototyping.
 
-------
+---
 
 ## Installation
 
-### npm
+### Using _npm_
 
 ```bash
-~ >>> npm install pcss-framework
+$ npm install pcss-framework
 ```
 
-### CDN
+### Using _CDN_
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/pcss-framework">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/pcss-framework@1.0.1/dist/pcss.min.css"
+/>
 ```
 
-## Documentation
+## Preview
 
-Documentation is available on [this website.](https://exler.github.io/pcss)
+Preview is available on [this website.](https://exler.github.io/pcss)
 
 ## License
 
-Copyright (c) 2018 by ***Kamil Marut***.
+Copyright (c) 2018-2020 by **_Kamil Marut_**.
 
-*pcss* is under the terms of the [MIT License](https://www.tldrlegal.com/l/mit), following all clarifications stated in the [license file](LICENSE).
+`pcss` is under the terms of the [MIT License](https://www.tldrlegal.com/l/mit), following all clarifications stated in the [license file](LICENSE).

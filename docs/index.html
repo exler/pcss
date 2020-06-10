@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+  <title>pcss</title>
+  <link rel='stylesheet' href='../dist/pcss.min.css' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <meta name='theme-color' content='#202b38' />
+</head>
+
+<body>
+  <center>
+    <img src='pcss-logo.png' width='230'>
+    <p>
+      Instant mobile-friendly CSS framework for prototyping.
+    </p>
+  </center>
+  <h2>
+    Usage
+  </h2>
+  <p>Simply include the stylesheet in your HTML files.</p>
+  <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pcss-framework@1.0.1/dist/pcss.min.css" /&gt;</code></pre>
+
+  <h2>Features</h2>
+  <ul>
+    <li>Responsive</li>
+    <li>Tiny (~6KB)</li>
+    <li>Easy to override</li>
+    <li>Just apply and beautify the page!</li>
+  </ul>
+
+  <h3>Form elements</h3>
+  <form>
+
+    <fieldset>
+      <legend>Fieldset</legend>
+
+      <label for='email'>Email</label>
+      <input type='email' name='email' id='email' placeholder='john.doe@gmail.com' />
+
+      <label for='password'>Password</label>
+      <input type='password' name='password' id='password' placeholder='password' />
+
+      <p>
+        <input type='checkbox' name='remember' id='remember' checked />
+        <label for='remember'>Remember me</label>
+      </p>
+
+      <input type='submit' value='Submit' />
+    </fieldset>
+
+    <label for='disabled'>Disabled input</label>
+    <input disabled name='disabled' id='disabled' placeholder='Disabled' />
+
+    <label for='about'>Text area</label>
+    <textarea name='about' id='about' placeholder='Write something...'></textarea>
+
+    <label for='foods'>Select your favorite food</label>
+    <select name='foods' id='food'>
+      <option value='pizza'>Pizza</option>
+      <option value='burger'>Burger</option>
+      <option value='hotdog'>Hot dog</option>
+    </select>
+
+    <label>Choose a Doe:</label>
+    <div>
+      <input type='radio' name='doe' value='john' checked>
+      <label for='john'>John Doe</label>
+    </div>
+    <div>
+      <input type='radio' name='doe' value='jane' checked>
+      <label for='jane'>Jane Doe</label>
+    </div>
+    <div>
+      <input type='radio' name='doe' value='johnny' checked>
+      <label for='johnny'>Johnny Doe</label>
+    </div>
+
+    <br />
+
+    <div>
+      <label for='slider'>Slider</label>
+      <input type='range' name='slider' id='slider' min='0' max='10' />
+    </div>
+  </form>
+
+  <h3>Code</h3>
+  <p>
+    Below is some <code>code</code>, with a <var>variable</var>, you can copy it with <kbd>Ctrl-C</kbd>.
+  </p>
+  <code>var <var>myNumber</var> = 0;</code>
+  <pre><code>// This logs a message to the console<br>console.log('Hello, world!')</code></pre>
+
+  <h3>Table</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pizza #1</td>
+        <td>1</td>
+        <td>$5</td>
+      </tr>
+      <tr>
+        <td>Pizza #2</td>
+        <td>2</td>
+        <td>$6</td>
+      </tr>
+      <tr>
+        <td>Pizza #3</td>
+        <td>3</td>
+        <td>$7</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Typography</h3>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dictum
+    hendrerit velit, quis ullamcorper sem congue ac. Quisque id magna rhoncus,
+    sodales massa vel, vestibulum elit. Duis ornare accumsan egestas. Proin
+    maximus lacus interdum leo molestie convallis. Orci varius natoque
+    penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut
+    iaculis risus eu felis feugiat, eu mollis neque elementum. Donec interdum,
+    nisl id dignissim iaculis, felis dui aliquet dui, non fermentum velit
+    lectus ac quam. Class aptent taciti sociosqu ad litora torquent per
+    conubia nostra, per inceptos himenaeos.
+  </p>
+  <p>
+    <strong>This is strong,</strong> this is normal,
+    <b>this is just bold,</b> <em>and this is emphasized!</em> And this is a
+    <a href='/'>link</a>.
+  </p>
+
+  <blockquote cite='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote'>
+    'The HTML blockquote Element (or HTML Block Quotation Element) indicates
+    that the enclosed text is an extended quotation. Usually, this is rendered
+    visually by indentation (see
+    <a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote#Usage_notes'>Notes</a>
+    for how to change it). A URL for the source of the quotation may be given
+    using the
+    <code>cite</code> attribute, while a text representation of the source can
+    be given using the <code>&lt;cite&gt;</code> cite element.'
+
+    <footer>
+      <cite>MDN, 'The Block Quotation element'</cite>
+    </footer>
+  </blockquote>
+
+  <q>Quotes (&lt;q&gt;) share the same style as blockquotes.</q>
+
+  <p>Use &lt;mark&gt; to <mark>highlight the important stuff</mark>.</p>
+
+  <ul>
+    <li>Unordered list item 1</li>
+    <li>Unordered list item 2</li>
+    <li>Unordered list item 3</li>
+  </ul>
+  <ol>
+    <li>Ordered list item 1</li>
+    <li>Ordered list item 2</li>
+    <li>Ordered list item 3</li>
+  </ol>
+
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+
+  <p>The details and summary tag</p>
+  <details>
+    <summary>Click to Open...</summary>
+    <p>The HTML Details Element (details) creates a disclosure widget in which information is visible only when the
+      widget is toggled into an "open" state. A summary or label can be provided using the summary element.</p>
+  </details>
+
+  <details open>
+    <summary>Click to Hide...</summary>
+    <p>The HTML Details Element (details) creates a disclosure widget in which information is visible only when the
+      widget is toggled into an "open" state. A summary or label can be provided using the summary element.</p>
+  </details>
+
+  <footer>
+    Copyright (c) 2018-2020 by Kamil Marut | <a href="https://github.com/EXLER/pcss">Github</a>
+  </footer>
+</body>
+
+</html>
