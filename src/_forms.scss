@@ -103,6 +103,10 @@ input[type="radio"]:checked {
 
 input[type="checkbox"]:checked::before {
   content: "✔";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
   transform: translateY(-50%) translateY(0.5px) translateX(-6px);
 }
 
