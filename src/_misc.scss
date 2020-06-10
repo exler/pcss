@@ -1,0 +1,101 @@
+a {
+  text-decoration: none;
+  color: $links;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code,
+samp,
+time {
+  background: $background;
+  color: $code;
+  padding: 2.5px 5px;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+pre > code {
+  padding: 10px;
+  display: block;
+  overflow-x: auto;
+}
+
+var {
+  color: $variable;
+  font-style: normal;
+  font-family: monospace;
+}
+
+kbd {
+  background: $background;
+  border: 1px solid $border;
+  border-radius: 2px;
+  color: $text-main;
+  padding: 2px 4px 2px 4px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid $border;
+}
+
+::-moz-selection {
+  background-color: $selection;
+}
+
+::selection {
+  background-color: $selection;
+}
+
+details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: $background-alt;
+  padding: 10px 10px 0;
+  margin: 1em 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+details[open] {
+  padding: 10px;
+}
+
+details > :last-child {
+  margin-bottom: 0;
+}
+
+details[open] summary {
+  margin-bottom: 10px;
+}
+
+summary {
+  display: list-item;
+  background-color: $background;
+  padding: 10px;
+  margin: -10px -10px 0;
+}
+
+details > :not(summary) {
+  margin-top: 0;
+}
+
+summary::-webkit-details-marker {
+  color: $text-main;
+}
+
+footer {
+  border-top: 1px solid $background;
+  padding-top: 10px;
+  font-size: 0.8em;
+  color: $text-muted;
+}

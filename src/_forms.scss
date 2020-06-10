@@ -1,0 +1,241 @@
+button,
+select,
+input[type="submit"],
+input[type="button"],
+input[type="checkbox"],
+input[type="range"],
+input[type="radio"] {
+  cursor: pointer;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select {
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  color: $form-text;
+  background-color: $background;
+
+  font-family: inherit;
+  font-size: inherit;
+
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+input,
+select,
+button,
+textarea {
+  -webkit-appearance: none;
+}
+
+textarea {
+  margin-right: 0;
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+select {
+  background: $background $select-arrow calc(100% - 12px) 50% / 12px no-repeat;
+  padding-right: 35px;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select[multiple] {
+  padding-right: 10px;
+  background-image: none;
+  overflow-y: auto;
+}
+
+button,
+input[type="submit"],
+input[type="button"] {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background: $button-hover;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+  box-shadow: 0 0 0 2px $focus;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  margin-right: 2px;
+}
+
+input[type="radio"] {
+  border-radius: 30%;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background: $focus;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✔";
+  transform: translateY(-50%) translateY(0.5px) translateX(-6px);
+}
+
+input[type="checkbox"]:active,
+input[type="radio"]:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="range"]:active,
+button:active {
+  transform: translateY(2px);
+}
+
+input:disabled,
+select:disabled,
+button:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+::-webkit-input-placeholder {
+  color: $form-placeholder;
+}
+
+::-moz-placeholder {
+  color: $form-placeholder;
+}
+
+::-ms-input-placeholder {
+  color: $form-placeholder;
+}
+
+::placeholder {
+  color: $form-placeholder;
+}
+
+fieldset {
+  border: 1px $focus solid;
+  border-radius: 6px;
+  margin: 0;
+  margin-bottom: 6px;
+  padding: 10px;
+}
+
+legend {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+input[type="range"] {
+  margin: 10px 0;
+  padding: 10px 0;
+  background: transparent;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 9.5px;
+  transition: 0.2s;
+  background: $background;
+  border-radius: 3px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 0px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: $border;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: $background;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 9.5px;
+  transition: 0.2s;
+  background: $background;
+  border-radius: 3px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: $border;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 9.5px;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: $background;
+  border: 0.2px solid #010101;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background: $background;
+  border: 0.2px solid #010101;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+input[type="range"]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: $border;
+}
+
+input[type="range"]:focus::-ms-fill-lower {
+  background: $background;
+}
+
+input[type="range"]:focus::-ms-fill-upper {
+  background: $background;
+}
