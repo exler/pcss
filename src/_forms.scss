@@ -1,5 +1,6 @@
 button,
 select,
+a.button,
 input[type="submit"],
 input[type="button"],
 input[type="checkbox"],
@@ -14,6 +15,7 @@ select {
 }
 
 input,
+a.button,
 button,
 textarea,
 select {
@@ -34,6 +36,7 @@ select {
 
 input,
 select,
+a.button,
 button,
 textarea {
   -webkit-appearance: none;
@@ -61,6 +64,7 @@ select[multiple] {
   overflow-y: auto;
 }
 
+a.button,
 button,
 input[type="submit"],
 input[type="button"] {
@@ -68,6 +72,11 @@ input[type="button"] {
   padding-left: 30px;
 }
 
+a.button:hover {
+  text-decoration: none;
+}
+
+a.button:hover,
 button:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover {
@@ -76,6 +85,7 @@ input[type="button"]:hover {
 
 input:focus,
 select:focus,
+a.button:focus,
 button:focus,
 textarea:focus {
   box-shadow: 0 0 0 2px $focus;
@@ -115,12 +125,14 @@ input[type="radio"]:active,
 input[type="submit"]:active,
 input[type="button"]:active,
 input[type="range"]:active,
+a.button:active,
 button:active {
   transform: translateY(2px);
 }
 
 input:disabled,
 select:disabled,
+a.button:disabled,
 button:disabled,
 textarea:disabled {
   cursor: not-allowed;

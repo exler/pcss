@@ -80,6 +80,7 @@ mark {
 
 button,
 select,
+a.button,
 input[type="submit"],
 input[type="button"],
 input[type="checkbox"],
@@ -92,6 +93,7 @@ select {
   display: block; }
 
 input,
+a.button,
 button,
 textarea,
 select {
@@ -108,6 +110,7 @@ select {
 
 input,
 select,
+a.button,
 button,
 textarea {
   -webkit-appearance: none; }
@@ -130,12 +133,17 @@ select[multiple] {
   background-image: none;
   overflow-y: auto; }
 
+a.button,
 button,
 input[type="submit"],
 input[type="button"] {
   padding-right: 30px;
   padding-left: 30px; }
 
+a.button:hover {
+  text-decoration: none; }
+
+a.button:hover,
 button:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover {
@@ -143,6 +151,7 @@ input[type="button"]:hover {
 
 input:focus,
 select:focus,
+a.button:focus,
 button:focus,
 textarea:focus {
   box-shadow: 0 0 0 2px #0096bfab; }
@@ -177,11 +186,13 @@ input[type="radio"]:active,
 input[type="submit"]:active,
 input[type="button"]:active,
 input[type="range"]:active,
+a.button:active,
 button:active {
   transform: translateY(2px); }
 
 input:disabled,
 select:disabled,
+a.button:disabled,
 button:disabled,
 textarea:disabled {
   cursor: not-allowed;
