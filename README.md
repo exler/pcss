@@ -2,8 +2,6 @@
 
 Instant mobile-friendly CSS framework for prototyping.
 
----
-
 ## Installation
 
 ### Using _npm_
@@ -17,7 +15,7 @@ $ npm install pcss-framework
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/pcss-framework@1.0.2/dist/pcss.min.css"
+  href="https://unpkg.com/pcss-framework/dist/pcss.min.css"
 />
 ```
 
