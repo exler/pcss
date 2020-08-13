@@ -19,8 +19,11 @@
     "compile": "node-sass ./src/pcss.scss ./dist/pcss.css",
     "minify": "minify ./dist/pcss.css > ./dist/pcss.min.css"
   },
-  "dependencies": {
+  "devDependencies": {
     "minify": "^5.1.1",
     "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
