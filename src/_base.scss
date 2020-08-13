@@ -4,14 +4,16 @@ body {
     "Helvetica Neue", sans-serif;
   line-height: 1.4;
 
-  max-width: 820px;
-  margin: 20px auto;
-  padding: 0 10px;
-
   color: $text-main;
   background: $background-body;
 
   text-rendering: optimizeLegibility;
+}
+
+main {
+  max-width: 820px;
+  margin: 20px auto;
+  padding: 0 10px;
 }
 
 button,

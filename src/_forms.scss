@@ -103,7 +103,7 @@ input[type="radio"] {
 }
 
 input[type="radio"] {
-  border-radius: 30%;
+  border-radius: 40%;
 }
 
 input[type="checkbox"]:checked,
@@ -118,16 +118,6 @@ input[type="checkbox"]:checked::before {
   left: 50%;
   top: 50%;
   transform: translateY(-50%) translateY(0.5px) translateX(-6px);
-}
-
-input[type="checkbox"]:active,
-input[type="radio"]:active,
-input[type="submit"]:active,
-input[type="button"]:active,
-input[type="range"]:active,
-a.button:active,
-button:active {
-  transform: translateY(2px);
 }
 
 input:disabled,
