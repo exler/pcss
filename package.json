@@ -17,7 +17,8 @@
   },
   "scripts": {
     "compile": "node-sass ./src/pcss.scss ./dist/pcss.css",
-    "minify": "minify ./dist/pcss.css > ./dist/pcss.min.css"
+    "minify": "minify ./dist/pcss.css > ./dist/pcss.min.css",
+    "build": "npm run compile && npm run minify"
   },
   "devDependencies": {
     "minify": "^5.1.1",
