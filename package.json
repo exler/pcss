@@ -21,8 +21,8 @@
     "build": "npm run compile && npm run minify"
   },
   "devDependencies": {
-    "minify": "^5.1.1",
-    "node-sass": "^4.14.1"
+    "minify": "^7.0.2",
+    "node-sass": "^6.0.1"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
