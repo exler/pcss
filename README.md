@@ -25,6 +25,6 @@ Preview is available on [this website.](https://exler.github.io/pcss)
 
 ## License
 
-Copyright (c) 2018-2020 by **_Kamil Marut_**.
+Copyright (c) 2018-2022 by **_Kamil Marut_**.
 
 `pcss` is under the terms of the [MIT License](https://www.tldrlegal.com/l/mit), following all clarifications stated in the [license file](LICENSE).

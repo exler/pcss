@@ -1,6 +1,6 @@
 {
   "name": "pcss-framework",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Instant mobile-friendly CSS framework for prototyping.",
   "keywords": [
     "css",
@@ -16,13 +16,13 @@
     "url": "https://github.com/EXLER/pcss.git"
   },
   "scripts": {
-    "compile": "node-sass ./src/pcss.scss ./dist/pcss.css",
+    "compile": "sass ./src/pcss.scss ./dist/pcss.css",
     "minify": "minify ./dist/pcss.css > ./dist/pcss.min.css",
     "build": "npm run compile && npm run minify"
   },
   "devDependencies": {
-    "minify": "^7.0.2",
-    "node-sass": "^6.0.1"
+    "minify": "^8.0.3",
+    "sass": "^1.45.2"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
